@@ -65,9 +65,13 @@ function App() {
       }).catch(err=>console.log(err));
         }
         else{
-          console.log('get from session');
           setList(itemValue.value);
+          setFocusIdx(-1);
         }
+      }
+      else{
+        setList([]);
+        setFocusIdx(-1);
       }
       }, 1000),
     []
@@ -102,11 +106,9 @@ function App() {
     }
   }
   useEffect(()=>{
-    console.log('render');
     clearExpiredSessionData();
-    // console.log(inputValue);
   }
-  ,[list,inputValue,debouncedHandleInputChange])
+  ,[list, inputValue])
   return (<Layout>
     <Wrapper>
       <h2>국내 모든 임상실험 검색하고<br/> 온라인으로 참여하기</h2>
