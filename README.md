@@ -9,6 +9,8 @@
    => fake로 json-server를 사용하기 위함 
 ### 3.데모영상
 
+![test1](https://github.com/wlsgus93/SerchonCRIS/assets/35252854/ccd8ed12-b36d-44f4-aeb9-1f4198d2f77d)
+
 
 ### 5. 기능 구현 설명
   - API 호출별로 로컬 캐싱 구현
